@@ -6,7 +6,9 @@ I have created the setup of CI-CD pipeline for the WebProject for which the flow
 
 ## Flow
 
-1. Create three EC2 Instances for installing and executing the above CI-CD Pipeline (eg: Jenkins, Sonarqube, Docker)
+* Create three EC2 Instances for installing and executing the above CI-CD Pipeline (eg: Jenkins, Sonarqube, Docker)
+* Push the code on to the github
+* Set up the Webhooks in Github repository settings as well as make the setting in the corresonsing jenkins URLfor the automatic process.
 
 EC2 Instance 1( Jenkins):
 Install Jenkins on this EC2 instance.
@@ -36,13 +38,17 @@ sudo apt install unzip
 then 
 ```
 unzip 'foldername' (eg unzip sonarqube-9.9.2.77730.zip)
+cd sonarqube-9.9.2.77730
+cd bin
+cd linux-x86-64
+```
+* Execute the sonar file (sonar.sh)
+```
+./sonar.sh console (console is a parameter to see the log file with details).
 ```
 
-Install Jenkins on this EC2 instance.
 
 
-2. Push the code on to the github
-3. Set up the Webhooks in Github repository settings as well as make the setting in the corresonsing jenkins URLfor the automatic process.
-4. 
-```
+
+
 
