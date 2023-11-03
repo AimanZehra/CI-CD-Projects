@@ -20,19 +20,19 @@
 ### Create Build Project
 * Go to the AWS Build Project > Create Build Project
 
-![Alt text](image.png)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/AWS-DevOps/Files/image.png)
 
 * Enter Source details
 
-![Alt text](image-1.png)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/AWS-DevOps/Files/image-1.png)
 
 * Enter environment details
-![Alt text](image-2.png)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/AWS-DevOps/Files/image-2.png)
 
 **We have to create a buildspec.yml file as well for below specification**
 This is a specification file which instructs the process to be followed while building the project. Basically we have to specify all the pases configuartion like (Install dependencies, Run/test, etc.,) in tis file\
 
-![Alt text](image-3.png)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/AWS-DevOps/Files/image-3.png)
 
 
 * And finally create a project
@@ -40,6 +40,6 @@ This is a specification file which instructs the process to be followed while bu
 ### Build the project 
 * Go to AWS CodeBuild and finally build the project
 
-![Alt text](image-4.png)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/AWS-DevOps/Files/image-4.png)
 
-![Alt text](image-5.png)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/AWS-DevOps/Files/image-5.png)
