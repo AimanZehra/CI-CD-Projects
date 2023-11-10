@@ -10,44 +10,45 @@ The Lambda function fetches all EBS snapshots owned by the same account ('self')
 
 ## Steps
 1. Create and EC2 Instance.
-2. Create a Snapshot of the EBS volume of the Instance.
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%201.JPG
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%202.JPG
+2. Create a Snapshot of the EBS volume of the Instance.\
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%201.JPG)\
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%202.JPG)
 
 **Now in order to delete the snapshots, we will use lambda function**
 
-3. Create a Lmabda function.
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%203.JPG
+3. Create a Lmabda function.\
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%203.JPG)
+
 4. Write the Lambda function code.
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%204.JPG
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%205.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%204.JPG)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%205.JPG)
 
 5. Click on deploy and test.
 6. Give the test name and save it.
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%206.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%206.JPG)
 
 7. Again click on the test, the test will fail due to certain permissions,
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%207.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%207.JPG)
 
 8. Now, we will give permissions, but before that go to thr permissions tab and edit and increase the default execution time to 10 sec and save
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%208.JPG
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%209.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%208.JPG)
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%209.JPG)
 
 9. Click on the permissions, Open the role and add new permissions to it
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%2010.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%2010.JPG)
 
 10. Cretae a policy to attach it to the snapshot.
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%2011.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%2011.JPG)
 
 11. While creating the policy add the delete and other specific permissions, add resource as 'All'
 
-https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%2013.JPG
+![Alt text](https://github.com/AimanZehra/CI-CD-Projects/blob/main/Lambda_Function_Project/Files/File%2013.JPG)
 
 12. Again go back to the role and atach the policy which is just created above.
 13. Grant the EC2 full acess as well.
