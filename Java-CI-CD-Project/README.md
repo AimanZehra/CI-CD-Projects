@@ -13,6 +13,7 @@ Prerequisites:
    -  Helm package manager
    -  Argo CD
 
+
 Steps:
 
     1. Install the necessary Jenkins plugins:
