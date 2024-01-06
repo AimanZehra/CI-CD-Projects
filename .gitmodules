@@ -1,0 +1,3 @@
+[submodule "Petclinic"]
+	path = Petclinic
+	url = https://github.com/jaiswaladi246/Petclinic.git
